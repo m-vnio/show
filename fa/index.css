@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+#app {
+  position: fixed;
+  inset: 0;
+
+  background: #000000;
+  user-select: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* animation: background 5000s linear infinite; */
+}
+
+.span_rFwtfb1 {
+  --max-top: 0;
+  --scale: 0;
+  position: absolute;
+
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 40px;
+}
+
+@keyframes fall {
+  0% {
+    top: 0%;
+    opacity: var(--opacity);
+  }
+  100% {
+    opacity: 1;
+    top: var(--max-top);
+  }
+}
+
+@keyframes background {
+  0% {
+    background: #000000;
+  }
+  100% {
+    background: #ffff00;
+  }
+}
+.letter {
+  position: fixed;
+  inset: 0;
+  background: rgb(0 0 0 / 0.5);
+
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  pointer-events: none;
+}
+
+.letter_2 {
+  background: purple;
+  pointer-events: initial;
+  width: min(100%, 1000px);
+  max-height: 100%;
+  padding: 100px 50px;
+
+  background: rgb(255 255 255 / 0.5);
+  backdrop-filter: blur(15px);
+
+  display: grid;
+  gap: 30px;
+
+  /* background: green; */
+
+  overflow-y: auto;
+
+  & h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 1000;
+  }
+}
+
+#confirm {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#confirm__center {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.element_J7FQvg2 {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 1500;
+}
+
+.e_xhvce6C {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.e_7Wl8GTb {
+  background: purple;
+  padding: 10px 30px;
+
+  border: none;
+  outline: none;
+
+  font-size: 25px;
+  font-weight: 500;
+  border-radius: 10px;
+  position: relative;
+}
+
+.button_Pqxkg01 {
+  background: none;
+  border: 1.25px solid #000000;
+  outline: none;
+  border-radius: 50%;
+  margin: auto;
+
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+#fullscreen {
+  position: fixed;
+  inset: 0;
+
+  background: #000000;
+  user-select: none;
+}
+
+.picture_adqXmax {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & img {
+    width: min(100%, 350px);
+  }
+}
