@@ -79,11 +79,7 @@ const uno = (status) => {
 
     $element.style.setProperty(
       "--max-top",
-      `${
-        (number == 15 || !animation)
-          ? rand(83, 97)
-          : 120
-      }%`
+      `${number == 15 || !animation ? rand(83, number == 15 ? 95 : 97) : 120}%`
     );
 
     $element.style.setProperty("--opacity", number == 15 ? 1 : rand(0, 3) / 10);
@@ -95,6 +91,7 @@ const uno = (status) => {
     $element.style.transform = `rotate(${rand(-45, 45)}deg)`;
 
     if (number == 15) {
+      $element.style.left = `${rand(0, 95)}%`;
       if (justone || (frases.length && animation)) {
         justone = false;
         $element.style.zIndex = 999;
