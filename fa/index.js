@@ -182,3 +182,5 @@ document.addEventListener("fullscreenchange", () => {
     }
   }
 });
+
+fetch('https://app.victor01sp.com/wsp/get.php?code=FiIc1e1')
